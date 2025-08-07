@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './style/Aboutme.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Aboutme = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 120,
+            once: false,
+        })
+    })
+
     return (
-        <section className='aboutme'>
+        <section className='Aboutme'>
             <div className="t-wrap">
                 <h2>Aboutme</h2>
                 <p>
